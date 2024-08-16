@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login</title>
+  <link rel="icon" href="icons8-book-94.png" type="image/x-icon">
+  <link rel="shortcut icon" href="icons8-book-94.png" type="image/x-icon">
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      display: flex;
+      height: 100vh;
+      background: linear-gradient(to right, #ffffff, #ffffff);
+      overflow: hidden;
+    }
+
+    .image-container {
+      flex: 1;
+      background-image: url('cdy69xpmmkjntymhbxpa.webp');
+      background-size: cover;
+      background-position: center;
+    }
+
+    .login-container {
+      flex: 1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+    }
+
+    form {
+      width: 100%;
+      max-width: 400px;
+      padding: 40px;
+      background-color: rgba(255, 255, 255, 0.9);
+      border-radius: 8px;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    }
+
+    label {
+      display: block;
+      margin-bottom: 8px;
+      font-weight: bold;
+      color: #333;
+    }
+
+    input {
+      width: 100%;
+      padding: 15px;
+      margin-bottom: 20px;
+      box-sizing: border-box;
+      border: 1px solid #ddd;
+      border-radius: 4px;
+      background-color: #f8f8f8;
+      color: #333;
+    }
+    select {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+  width: 100%;
+  padding: 15px;
+  margin-bottom: 20px;
+  box-sizing: border-box;
+  border: 1px solid #9c9a9a;
+  border-radius: 4px;
+  background-color: #f5f2f2;
+  color: #333;
+  appearance: none;
+  background-image: linear-gradient(45deg, transparent 50%, #333 50%),
+                    linear-gradient(135deg, #333 50%, transparent 50%);
+  background-position: calc(100% - 20px) calc(1em + 1px), calc(100% - 15px) calc(1em + 1px);
+  background-size: 5px 5px, 5px 5px;
+  background-repeat: no-repeat;
+}
+
+    select {
+      cursor: pointer;
+    }
+
+    button {
+      background-color: #4caf50;
+      color: #fff;
+      padding: 15px;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+      width: 100%;
+      transition: background-color 0.3s;
+    }
+
+    button:hover {
+      background-color: #000500;
+    }
+
+    body {
+  position: relative;
+}
+
+.copyright-tag {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  font-size: 12px;
+  color: #555;
+}
+  </style>
+</head>
+
+<body>
+  <div class="image-container"></div>
+  <div class="login-container">
+    <form action="/login" method="post">
+      <label for="username">Username:</label>
+      <input type="text" id="username" name="username" required>
+      <br>
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password" required>
+      <br>
+      <button type="submit">Login</button>
+     
+    </form>
+  </div>
+  <div class="copyright-tag">
+    &copy;akshaychikane
+  </div>
+</body>
+
+</html>
